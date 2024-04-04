@@ -8,10 +8,9 @@ input,
 select,
 textarea {
 	font-family: 'Source Sans Pro', 'Helvetica', Arial, sans-serif;
-	font-size: 18px;
-	line-height: 1.5;
+	font-size: 1rem;
+	line-height: normal;
 }
-
 h1,
 h2,
 h3,
@@ -120,7 +119,7 @@ body {
 }
 
 .intro {
-    padding: 2em 2em;
+    padding: 1.5em 2em;
     color: #ffffff;
     background: #429890;
 }
@@ -133,8 +132,14 @@ body {
 }
 
 .test-area {
-    margin-bottom: 4em;
+    margin-bottom: 2em;
     padding: 0 2em;
+    input{
+        margin-top: 1em;
+        padding: .5em;
+        border-radius: .5rem;
+        width: 94.8%;
+    }
 }
 
 .test-wrapper {
@@ -165,24 +170,78 @@ body {
     margin-top: 1em;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+}
+
+#clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
 }
 
 .timer {
-    font-size: 3em;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
 #reset {
     padding: .5em 1em;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: bold;
     color: #E95D0F;
     background: white ;
-    border: 10px solid #E95D0F;
+    border: 5px solid #E95D0F;
+    border-radius: .5em;
+    transition: .5s;
 }
 
 #reset:hover {
+    transition: .5s;
     color: white;
     background-color: #E95D0F;
+}
+
+.classfication{
+    padding: 0rem 2rem;
+    h2{
+        text-align: center;
+    }
+    ol{
+        display: flex;
+        flex-direction: column;
+        gap: 1.25em;
+        padding: 0 1em;
+        h3{
+            margin: 0;
+            margin-bottom: .25em;
+        }
+        p{
+            margin: 0;
+        }
+        span{
+            text-align: center;
+            font-size: 1em;
+            font-weight: 600;
+            color: #E95D0F;
+        }
+    }
+}
+
+.reloadSection{
+    padding: 2.5em 2em 0em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p{
+        margin: 0 0 .5em 0;
+        text-align: center;
+    }
+    .reloadData{
+        margin-bottom: 1.5rem;
+    }
+
+    .cleanData{
+        margin-bottom: 4em;
+    }
 }

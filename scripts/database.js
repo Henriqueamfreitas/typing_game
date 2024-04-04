@@ -48,10 +48,12 @@ let phrases = [
         id: 9,
         phrase: "Na prosperidade, nossos amigos nos conhecem; na adversidade, nós é que conhecemos nossos amigos", 
     },
+    
+
 ]
 
 const textTest = document.querySelector(".textTest")
-let numeroAleatorio = Math.floor(Math.random() * 6) ;
+let numeroAleatorio = Math.floor(Math.random() * 9) ;
 
 const selectedPhrase = phrases[numeroAleatorio].phrase
 textTest.innerHTML = selectedPhrase

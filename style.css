@@ -2,6 +2,9 @@
 Tipografia
 --------------------------------------------------------------*/
 
+button{
+    cursor: pointer;
+}
 body,
 button,
 input,
@@ -236,12 +239,47 @@ body {
     p{
         margin: 0 0 .5em 0;
         text-align: center;
-    }
-    .reloadData{
-        margin-bottom: 1.5rem;
+        max-width: 550px;
     }
 
+    .reloadData{
+        margin-bottom: 1.5rem;
+        padding: .5em 1em;
+        font-size: 1em;
+        font-weight: bold;
+        color: #E95D0F;
+        background: white ;
+        border: 2px solid #E95D0F;
+        border-radius: .5em;
+        transition: .5s;
+        width: 62%;
+        max-width: 350px;
+    }
+
+    .reloadData:hover {
+        transition: .5s;
+        color: white;
+        background-color: #E95D0F;
+    }
+    
     .cleanData{
+        max-width: 350px;
         margin-bottom: 4em;
+        margin-bottom: 1.5rem;
+        padding: .5em 1em;
+        font-size: 1em;
+        font-weight: bold;
+        color: #429890;
+        background: white ;
+        border: 2px solid #429890;
+        border-radius: .5em;
+        transition: .5s;
+        width: 62%;
+    }
+
+    .cleanData:hover {
+        transition: .5s;
+        color: white;
+        background-color: #429890;
     }
 }
